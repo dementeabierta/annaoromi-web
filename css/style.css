@@ -334,7 +334,8 @@ nav.scrolled { padding: 1rem 2rem; box-shadow: var(--shadow); }
   font-family: var(--font-serif); font-size: 5rem; color: var(--border);
   position: relative; overflow: hidden;
 }
-.about-img-wrap img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.about-img-wrap img,
+.about-img-wrap video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
 /* --------------------------------------------------------------------------
    12. Formulario
