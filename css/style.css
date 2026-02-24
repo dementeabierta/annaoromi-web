@@ -190,15 +190,20 @@ nav.scrolled { padding: 1rem 2rem; box-shadow: var(--shadow); }
   background-color: var(--bg-dark); color: #fff;
   padding: 9rem 2rem 6rem;
 }
+.hero-video {
+  position: absolute; inset: 0; z-index: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+}
 .hero::before {
-  content: ''; position: absolute; inset: 0;
+  content: ''; position: absolute; inset: 0; z-index: 1;
   background:
+    linear-gradient(to bottom, rgba(15,15,20,0.62) 0%, rgba(15,15,20,0.50) 100%),
     radial-gradient(ellipse at 15% 55%, rgba(139, 111, 166, 0.18) 0%, transparent 55%),
-    radial-gradient(ellipse at 85% 15%, rgba(122, 158, 142, 0.12) 0%, transparent 50%),
-    radial-gradient(ellipse at 65% 85%, rgba(196, 135, 110, 0.08) 0%, transparent 45%);
+    radial-gradient(ellipse at 85% 15%, rgba(122, 158, 142, 0.12) 0%, transparent 50%);
   pointer-events: none;
 }
-.hero-content { position: relative; max-width: var(--max-w); margin: 0 auto; width: 100%; }
+.hero-content { position: relative; z-index: 2; max-width: var(--max-w); margin: 0 auto; width: 100%; }
 
 .hero-label {
   font-size: 0.78rem; font-weight: 400;
