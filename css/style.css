@@ -123,7 +123,7 @@ nav.scrolled { padding: 1rem 2rem; box-shadow: var(--shadow); }
 .nav-links a {
   font-size: 0.78rem; font-weight: 400;
   letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--text-light);
+  color: var(--text);
   position: relative; transition: var(--transition);
 }
 .nav-links a::after {
