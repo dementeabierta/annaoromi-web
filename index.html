@@ -17,19 +17,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
 
   <nav role="navigation" aria-label="Navegación principal">
-    <a href="index.html" class="nav-logo" aria-label="Anna Oromi — Inicio">Anna Oromi</a>
-    <button class="nav-toggle" aria-expanded="false" aria-label="Abrir menú">
+    <a href="index.html" class="nav-logo" data-i18n-aria="nav.logo.aria" aria-label="Anna Oromi — Inicio">Anna Oromi</a>
+    <button class="nav-toggle" aria-expanded="false" data-i18n-aria="nav.toggle.aria" aria-label="Abrir menú">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" role="list">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="sobre-mi.html">Sobre mí</a></li>
-      <li><a href="contacto.html" class="nav-cta">Contacto</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="sobre-mi.html" data-i18n="nav.about">Sobre mí</a></li>
+      <li><a href="contacto.html" class="nav-cta" data-i18n="nav.contact">Contacto</a></li>
+      <li class="lang-switcher" aria-label="Language / Idioma">
+        <button class="lang-btn" data-lang="es">ES</button>
+        <span class="lang-switcher-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </li>
     </ul>
   </nav>
 
@@ -41,15 +46,15 @@
         <source src="img/encabezado.mp4" type="video/mp4">
       </video>
       <div class="hero-content">
-        <span class="hero-label">Psicóloga · Escritora · Exploradora del alma</span>
+        <span class="hero-label" data-i18n="index.hero.label">Psicóloga · Escritora · Exploradora del alma</span>
         <h1>Anna Oromi</h1>
-        <p class="hero-quote">
+        <p class="hero-quote" data-i18n="index.hero.quote">
           «Cada rostro es una historia en movimiento;<br>
           la psicoterapia ayuda a unir sus fragmentos.»
         </p>
         <div class="hero-actions">
-          <a href="sobre-mi.html" class="btn btn-light">Descúbreme</a>
-          <a href="contacto.html" class="btn btn-light" style="border-color:var(--violet);color:var(--violet);">Hablemos</a>
+          <a href="sobre-mi.html" class="btn btn-light" data-i18n="index.hero.discover">Descúbreme</a>
+          <a href="contacto.html" class="btn btn-light" style="border-color:var(--violet);color:var(--violet);" data-i18n="index.hero.talk">Hablemos</a>
         </div>
       </div>
     </section>
@@ -62,15 +67,15 @@
             <img src="img/anna-oromi.jpg" alt="Anna Oromi, psicóloga enfocada en el envejecimiento activo, Palma de Mallorca" loading="lazy">
           </div>
           <div class="about-text">
-            <span class="section-label">Sobre mí</span>
-            <h2 id="about-heading">Ciencia con imaginación.<br></h2>
-            <p class="lead">
+            <span class="section-label" data-i18n="index.about.label">Sobre mí</span>
+            <h2 id="about-heading" data-i18n="index.about.h2">Ciencia con imaginación.</h2>
+            <p class="lead" data-i18n="index.about.lead">
               Soy psicóloga con interés en el colectivo de personas mayores: envejecimiento activo, proyectos intergeneracionales y los factores que hacen posible envejecer con plenitud. Creo que el autoconocimiento es la herramienta más valiosa que tenemos, y la psicoterapia, el camino más honesto para desarrollarla.
             </p>
-            <p>
+            <p data-i18n="index.about.p">
               Vivo en Palma de Mallorca y me muevo entre el rigor académico y la imaginación creativa. Soy también escritora, masajista holística y creadora del oráculo <em>Luz o Cruz</em>. Todo forma parte de un mismo hilo: acompañar a las personas en el arte de reconocerse a sí mismas.
             </p>
-            <a href="sobre-mi.html" class="btn btn-primary mt-3">Conocerme mejor →</a>
+            <a href="sobre-mi.html" class="btn btn-primary mt-3" data-i18n="index.about.btn">Conocerme mejor →</a>
           </div>
         </div>
       </div>
@@ -78,51 +83,50 @@
 
     <!-- PULLQUOTE -->
     <div class="pullquote">
-      <blockquote>
+      <blockquote data-i18n="index.pullquote1">
         «Envejecer no es perder el futuro.<br>
         Es aprender a habitar el presente<br>
         con toda la sabiduría del pasado.»
       </blockquote>
-      <cite>— Anna Oromi</cite>
+      <cite data-i18n="index.pullquote1.cite">— Anna Oromi</cite>
     </div>
 
     <!-- MIS MUNDOS -->
     <section class="section-alt" aria-labelledby="mundos-heading">
       <div class="container">
         <div class="section-header section-header--center">
-          <span class="section-label">Mis mapas</span>
-          <h2 id="mundos-heading">Cada camino lleva al mismo lugar</h2>
-          <p>Exploro la salud humana desde varios ángulos.</p>
+          <span class="section-label" data-i18n="index.mundos.label">Mis mapas</span>
+          <h2 id="mundos-heading" data-i18n="index.mundos.h2">Cada camino lleva al mismo lugar</h2>
+          <p data-i18n="index.mundos.p">Exploro la salud humana desde varios ángulos.</p>
         </div>
         <div class="facetas-grid">
 
-
           <article class="card card--rose">
             <div class="card-icon" aria-hidden="true">✍️</div>
-            <h3>Escritura y Edición</h3>
-            <p>Autora biográfica, editora y correctora. Las palabras son el mapa del territorio interior.</p>
-            <a href="escritura.html" class="card-link">Explorar →</a>
+            <h3 data-i18n="index.card.escritura.h3">Escritura y Edición</h3>
+            <p data-i18n="index.card.escritura.p">Autora biográfica, editora y correctora. Las palabras son el mapa del territorio interior.</p>
+            <a href="escritura.html" class="card-link" data-i18n="index.card.escritura.link">Explorar →</a>
           </article>
 
           <article class="card card--sage">
             <div class="card-icon" aria-hidden="true">🌿</div>
-            <h3>Almasaje</h3>
-            <p>Sesiones que combinan masaje californiano, reflexología tailandesa y arteterapia. El cuerpo como primer hogar; el tacto, su idioma.</p>
-            <a href="almasaje.html" class="card-link">Explorar →</a>
+            <h3 data-i18n="index.card.almasaje.h3">Almasaje</h3>
+            <p data-i18n="index.card.almasaje.p">Sesiones que combinan masaje californiano, reflexología tailandesa y arteterapia. El cuerpo como primer hogar; el tacto, su idioma.</p>
+            <a href="almasaje.html" class="card-link" data-i18n="index.card.almasaje.link">Explorar →</a>
           </article>
 
           <article class="card">
             <div class="card-icon" aria-hidden="true">🃏</div>
-            <h3>Luz o Cruz</h3>
-            <p>Un oráculo de exploración interior nacido de la sabiduría de una monja centenaria. Para cuando las preguntas pesan más que las respuestas.</p>
-            <a href="oraculo.html" class="card-link">Explorar →</a>
+            <h3 data-i18n="index.card.oraculo.h3">Luz o Cruz</h3>
+            <p data-i18n="index.card.oraculo.p">Un oráculo de exploración interior nacido de la sabiduría de una monja centenaria. Para cuando las preguntas pesan más que las respuestas.</p>
+            <a href="oraculo.html" class="card-link" data-i18n="index.card.oraculo.link">Explorar →</a>
           </article>
 
           <article class="card card--sage">
             <div class="card-icon" aria-hidden="true">🎨</div>
-            <h3>Reducción de Riesgos</h3>
-            <p>Diseño educativo y voluntariado para colectivos de salud en espacios de ocio nocturno. Arte y comunidad al servicio de la prevención y promoción de la salud.</p>
-            <span class="card-link" style="cursor:default; opacity:0.5;">Voluntariado activo</span>
+            <h3 data-i18n="index.card.reduccion.h3">Reducción de Riesgos</h3>
+            <p data-i18n="index.card.reduccion.p">Diseño educativo y voluntariado para colectivos de salud en espacios de ocio nocturno. Arte y comunidad al servicio de la prevención y promoción de la salud.</p>
+            <span class="card-link" style="cursor:default; opacity:0.5;" data-i18n="index.card.reduccion.link">Voluntariado activo</span>
           </article>
 
         </div>
@@ -133,36 +137,36 @@
     <section aria-labelledby="esp-heading">
       <div class="container--narrow">
         <div class="section-header">
-          <span class="section-label">Especialización</span>
-          <h2 id="esp-heading">Aprender a envejecer<br>es el proyecto de toda una vida.</h2>
+          <span class="section-label" data-i18n="index.esp.label">Especialización</span>
+          <h2 id="esp-heading" data-i18n="index.esp.h2">Aprender a envejecer<br>es el proyecto de toda una vida.</h2>
         </div>
-        <p class="lead">
+        <p class="lead" data-i18n="index.esp.lead">
           Mi trabajo tiene un foco claro: el colectivo de personas mayores. Creo que la forma en que envejecemos depende, en gran medida, de cómo nos relacionamos con nosotros mismos, con las generaciones que nos rodean y con el tiempo que aún tenemos por delante.
         </p>
-        <p>
+        <p data-i18n="index.esp.p">
           Los <strong>proyectos intergeneracionales</strong>, los factores del <strong>envejecimiento saludable</strong> y la promoción del <strong>envejecimiento activo</strong> son la base de mi práctica. Y el <strong>autoconocimiento</strong> es el hilo que lo conecta todo: somos nosotros mismos quienes nos acompañaremos en todas las etapas de la vida.
         </p>
         <div class="tags mt-3" aria-label="Áreas de especialización">
-          <span class="tag">Personas mayores</span>
-          <span class="tag">Envejecimiento activo</span>
-          <span class="tag">Intergeneracional</span>
-          <span class="tag">Autoconocimiento</span>
-          <span class="tag">Psicoterapia</span>
-          <span class="tag">Creatividad</span>
+          <span class="tag" data-i18n="index.tag.mayores">Personas mayores</span>
+          <span class="tag" data-i18n="index.tag.activo">Envejecimiento activo</span>
+          <span class="tag" data-i18n="index.tag.intergeneracional">Intergeneracional</span>
+          <span class="tag" data-i18n="index.tag.autoconocimiento">Autoconocimiento</span>
+          <span class="tag" data-i18n="index.tag.psicoterapia">Psicoterapia</span>
+          <span class="tag" data-i18n="index.tag.creatividad">Creatividad</span>
         </div>
-        <a href="contacto.html" class="btn btn-primary mt-4">Contactar →</a>
+        <a href="contacto.html" class="btn btn-primary mt-4" data-i18n="index.esp.btn">Contactar →</a>
       </div>
     </section>
 
     <!-- CONTACTO CTA -->
     <section class="section-dark" aria-labelledby="cta-heading">
       <div class="container--narrow text-center">
-        <span class="section-label">¿Empezamos?</span>
-        <h2 id="cta-heading">Todo comienza con una pregunta.</h2>
-        <p class="lead" style="color:rgba(255,255,255,0.55); max-width:520px; margin: 0 auto 2.5rem;">
+        <span class="section-label" data-i18n="index.cta.label">¿Empezamos?</span>
+        <h2 id="cta-heading" data-i18n="index.cta.h2">Todo comienza con una pregunta.</h2>
+        <p class="lead" style="color:rgba(255,255,255,0.55); max-width:520px; margin: 0 auto 2.5rem;" data-i18n="index.cta.lead">
           Sea cual sea el camino que buscas —psicológico, corporal, literario o simbólico— aquí hay un espacio para explorar. La primera conversación siempre es la más reveladora.
         </p>
-        <a href="contacto.html" class="btn btn-light">Escribirme →</a>
+        <a href="contacto.html" class="btn btn-light" data-i18n="index.cta.btn">Escribirme →</a>
       </div>
     </section>
 
@@ -172,22 +176,23 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <h3>Anna Oromi</h3>
-        <p>Psicóloga · Escritora · Exploradora del alma<br>Palma de Mallorca</p>
+        <p data-i18n="footer.tagline">Psicóloga · Escritora · Exploradora del alma<br>Palma de Mallorca</p>
       </div>
       <nav class="footer-nav" aria-label="Navegación del pie">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="sobre-mi.html">Sobre mí</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="sobre-mi.html" data-i18n="nav.about">Sobre mí</a></li>
+          <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
         </ul>
       </nav>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Anna Oromi. Todos los derechos reservados.</p>
-      <p>Hecho con curiosidad y cuidado.</p>
+      <p data-i18n="footer.copyright">© 2025 Anna Oromi. Todos los derechos reservados.</p>
+      <p data-i18n="footer.made">Hecho con curiosidad y cuidado.</p>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

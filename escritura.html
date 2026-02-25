@@ -11,19 +11,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
 
   <nav role="navigation" aria-label="Navegación principal">
     <a href="index.html" class="nav-logo">Anna Oromi</a>
-    <button class="nav-toggle" aria-expanded="false" aria-label="Abrir menú">
+    <button class="nav-toggle" aria-expanded="false" data-i18n-aria="nav.toggle.aria" aria-label="Abrir menú">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" role="list">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="sobre-mi.html">Sobre mí</a></li>
-      <li><a href="contacto.html" class="nav-cta">Contacto</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="sobre-mi.html" data-i18n="nav.about">Sobre mí</a></li>
+      <li><a href="contacto.html" class="nav-cta" data-i18n="nav.contact">Contacto</a></li>
+      <li class="lang-switcher" aria-label="Language / Idioma">
+        <button class="lang-btn" data-lang="es">ES</button>
+        <span class="lang-switcher-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </li>
     </ul>
   </nav>
 
@@ -32,9 +37,9 @@
     <!-- PAGE HERO -->
     <header class="page-hero">
       <div class="container--narrow">
-        <span class="section-label">Escritura y Edición</span>
-        <h1><br>Las palabras son<br>el primer mapa</h1>
-        <p class="lead">
+        <span class="section-label" data-i18n="escritura.page.label">Escritura y Edición</span>
+        <h1 data-i18n="escritura.page.h1"><br>Las palabras son<br>el primer mapa</h1>
+        <p class="lead" data-i18n="escritura.page.lead">
           Escribir una historia es encontrarla. Editar una historia es ayudar a quien la tiene a que la reconozca como suya.
         </p>
       </div>
@@ -44,13 +49,13 @@
     <section aria-labelledby="escritura-heading">
       <div class="container--narrow">
         <div class="section-header">
-          <span class="section-label">Mi trabajo con las palabras</span>
-          <h2 id="escritura-heading">Escribir es un acto<br>de arqueología interior</h2>
+          <span class="section-label" data-i18n="escritura.about.label">Mi trabajo con las palabras</span>
+          <h2 id="escritura-heading" data-i18n="escritura.about.h2">Escribir es un acto<br>de arqueología interior</h2>
         </div>
-        <p class="lead">
+        <p class="lead" data-i18n="escritura.about.lead">
           Antes de ser psicóloga, era escritora. O quizás ambas cosas surgieron del mismo lugar: la convicción de que contar una vida —bien contada— tiene poder transformador.
         </p>
-        <p>
+        <p data-i18n="escritura.about.p">
           He trabajado como autora biográfica, como editora de poesía, como prologuista y como correctora de textos en castellano, catalán y alemán. Cada proyecto es diferente, pero todos parten del mismo principio: respetar la voz de quien escribe mientras se la ayuda a brillar con más claridad.
         </p>
       </div>
@@ -62,112 +67,113 @@
     <section aria-labelledby="obras-heading">
       <div class="container--narrow">
         <div class="section-header">
-          <span class="section-label">Obras</span>
-          <h2 id="obras-heading">Los libros que han pasado<br>por mis manos</h2>
+          <span class="section-label" data-i18n="escritura.obras.label">Obras</span>
+          <h2 id="obras-heading" data-i18n="escritura.obras.h2">Los libros que han pasado<br>por mis manos</h2>
         </div>
 
         <div class="book-list">
 
-          <!-- Libro 1: Biografía de la monja -->
+          <!-- Libro 1 -->
           <article class="book-card">
             <div class="book-cover">
               <img src="img/libro-screenshot-1.jpg" alt="Biografía de una monja centenaria" loading="lazy">
             </div>
             <div class="book-info">
-              <div class="book-role">Autora</div>
-              <h3>Biografía de una monja centenaria</h3>
+              <div class="book-role" data-i18n="libro1.role">Autora</div>
+              <h3 data-i18n="libro1.h3">Biografía de una monja centenaria</h3>
               <div class="book-meta">
-                <span>220 páginas</span>
-                <span>Castellano</span>
-                <span>Autopublicado · Diseño AlfaBooks</span>
+                <span data-i18n="libro1.meta1">220 páginas</span>
+                <span data-i18n="libro1.meta2">Castellano</span>
+                <span data-i18n="libro1.meta3">Autopublicado · Diseño AlfaBooks</span>
               </div>
-              <p>
+              <p data-i18n="libro1.p">
                 Relatos y análisis de la vida de una monja sabia y longeva, dotada de una mente extraordinariamente amorosa. Una exploración biográfica con perspectiva terapéutica, que recoge la memoria de una mujer que habitó 103 años con plena conciencia. La historia que está en el origen de todo: este libro es también la semilla del oráculo <em>Luz o Cruz</em>.
               </p>
               <div class="tags">
-                <span class="tag">Biografía</span>
-                <span class="tag">Envejecimiento</span>
-                <span class="tag">Memoria</span>
-                <span class="tag">Vida contemplativa</span>
+                <span class="tag" data-i18n="libro1.tag1">Biografía</span>
+                <span class="tag" data-i18n="libro1.tag2">Envejecimiento</span>
+                <span class="tag" data-i18n="libro1.tag3">Memoria</span>
+                <span class="tag" data-i18n="libro1.tag4">Vida contemplativa</span>
               </div>
             </div>
           </article>
 
-          <!-- Libro 2: Poemario Aguedo -->
+          <!-- Libro 2 -->
           <article class="book-card">
             <div class="book-cover">
               <img src="img/libro-screenshot-2.png" alt="Poemario de Aguedo Fernández" loading="lazy">
             </div>
             <div class="book-info">
-              <div class="book-role">Prólogo y edición</div>
-              <h3>Poemario de Aguedo Fernández</h3>
+              <div class="book-role" data-i18n="libro2.role">Prólogo y edición</div>
+              <h3 data-i18n="libro2.h3">Poemario de Aguedo Fernández</h3>
               <div class="book-meta">
-                <span>230 páginas</span>
-                <span>Catalán · Castellano</span>
+                <span data-i18n="libro2.meta1">230 páginas</span>
+                <span data-i18n="libro2.meta2">Catalán · Castellano</span>
               </div>
-              <p>
+              <p data-i18n="libro2.p">
                 Recopilación de dos décadas de poesía de Aguedo Fernández. Me ocupé del prólogo literario y de la edición con AlfaBooks del volumen: un trabajo de escucha y de cuidado hacia una voz poética que merecía ser recogida con rigor y ternura.
               </p>
               <div class="tags">
-                <span class="tag">Poesía</span>
-                <span class="tag">Edición</span>
-                <span class="tag">Prólogo</span>
-                <span class="tag">Bilingüe</span>
+                <span class="tag" data-i18n="libro2.tag1">Poesía</span>
+                <span class="tag" data-i18n="libro2.tag2">Edición</span>
+                <span class="tag" data-i18n="libro2.tag3">Prólogo</span>
+                <span class="tag" data-i18n="libro2.tag4">Bilingüe</span>
               </div>
-              <a href="docs/muestra-libro-1.pdf" class="pdf-link" target="_blank" rel="noopener" aria-label="Leer muestra del poemario (PDF, 20 páginas)">
+              <a href="docs/muestra-libro-1.pdf" class="pdf-link" target="_blank" rel="noopener" data-i18n="libro2.pdf" aria-label="Leer muestra del poemario (PDF, 20 páginas)">
                 📄 Leer muestra (PDF · 20 págs.)
               </a>
             </div>
           </article>
 
-          <!-- Libro 3: Manual artistas de gira -->
+          <!-- Libro 3 -->
           <article class="book-card">
             <div class="book-cover">
               <img src="img/screenshot-nov24-2.png" alt="Manual para artistas de gira" loading="lazy">
             </div>
             <div class="book-info">
-              <div class="book-role">Correctora de traducción</div>
-              <h3>Manual para artistas de gira</h3>
+              <div class="book-role" data-i18n="libro3.role">Correctora de traducción</div>
+              <h3 data-i18n="libro3.h3">Manual para artistas de gira</h3>
               <div class="book-meta">
-                <span>612 páginas</span>
-                <span>Castellano</span>
-                <span>Liburuak · Bilbao</span>
+                <span data-i18n="libro3.meta1">612 páginas</span>
+                <span data-i18n="libro3.meta2">Castellano</span>
+                <span data-i18n="libro3.meta3">Liburuak · Bilbao</span>
               </div>
-              <p>
+              <p data-i18n="libro3.p">
                 Guía de salud y bienestar para músicos y artistas en gira, escrita originalmente por Tamsin Embleton. Realicé la corrección completa de la traducción al castellano para la editorial Liburuak. Un texto en la intersección perfecta entre mis dos mundos: la psicología del bienestar y la escritura al servicio de quien cuida a otros.
               </p>
               <div class="tags">
-                <span class="tag">Corrección</span>
-                <span class="tag">Salud</span>
-                <span class="tag">Bienestar</span>
-                <span class="tag">Traducción</span>
+                <span class="tag" data-i18n="libro3.tag1">Corrección</span>
+                <span class="tag" data-i18n="libro3.tag2">Salud</span>
+                <span class="tag" data-i18n="libro3.tag3">Bienestar</span>
+                <span class="tag" data-i18n="libro3.tag4">Traducción</span>
               </div>
             </div>
           </article>
 
-          <!-- Libro 4: Entrevista biográfica alemán -->
+          <!-- Libro 4 -->
           <article class="book-card">
             <div class="book-cover">
               <img src="img/screenshot-nov24-1.png" alt="Entrevista biográfica en alemán" loading="lazy">
             </div>
             <div class="book-info">
-              <div class="book-role">Editora</div>
-              <h3>Entrevista biográfica (alemán)</h3>
+              <div class="book-role" data-i18n="libro4.role">Editora</div>
+              <h3 data-i18n="libro4.h3">Entrevista biográfica (alemán)</h3>
               <div class="book-meta">
-                <span>36 páginas</span>
-                <span>Alemán</span>
+                <span data-i18n="libro4.meta1">36 páginas</span>
+                <span data-i18n="libro4.meta2">Alemán</span>
               </div>
-              <p>
+              <p data-i18n="libro4.p">
                 El testimonio de una mujer obligada a desarrollar una carrera artística que no eligió —y la personalidad extrovertida que construyó como mecanismo de adaptación. Edité este texto en alemán prestando especial atención a la coherencia narrativa y al respeto por la voz de la protagonista.
               </p>
               <div class="tags">
-                <span class="tag">Alemán</span>
-                <span class="tag">Biografía</span>
-                <span class="tag">Identidad</span>
-                <span class="tag">Edición</span>
+                <span class="tag" data-i18n="libro4.tag1">Alemán</span>
+                <span class="tag" data-i18n="libro4.tag2">Biografía</span>
+                <span class="tag" data-i18n="libro4.tag3">Identidad</span>
+                <span class="tag" data-i18n="libro4.tag4">Edición</span>
               </div>
               <a href="https://drive.google.com/file/d/1tZ95MDGixNItsbBG002smILt1Q0elOtJ/view?usp=sharing"
                  class="pdf-link" target="_blank" rel="noopener"
+                 data-i18n="libro4.link"
                  aria-label="Leer muestra de la entrevista biográfica (Google Drive)">
                 📄 Leer muestra (Google Drive)
               </a>
@@ -180,41 +186,41 @@
 
     <!-- PULLQUOTE -->
     <div class="pullquote">
-      <blockquote>
+      <blockquote data-i18n="escritura.pullquote">
         «Una historia bien contada<br>
         no solo describe lo que pasó.<br>
         Revela quién eres ahora.»
       </blockquote>
-      <cite>— Anna Oromi</cite>
+      <cite data-i18n="escritura.pullquote.cite">— Anna Oromi</cite>
     </div>
 
     <!-- SERVICIOS EDITORIALES -->
     <section class="section-alt" aria-labelledby="servicios-edit-heading">
       <div class="container">
         <div class="section-header section-header--center">
-          <span class="section-label">Servicios</span>
-          <h2 id="servicios-edit-heading">¿Tienes un texto que necesita cuidado?</h2>
-          <p>Trabajo con proyectos que merecen atención y respeto. Estos son los servicios que ofrezco.</p>
+          <span class="section-label" data-i18n="servicios.label">Servicios</span>
+          <h2 id="servicios-edit-heading" data-i18n="servicios.h2">¿Tienes un texto que necesita cuidado?</h2>
+          <p data-i18n="servicios.desc">Trabajo con proyectos que merecen atención y respeto. Estos son los servicios que ofrezco.</p>
         </div>
         <div class="grid-3">
           <div class="card">
             <div class="card-icon" aria-hidden="true">📝</div>
-            <h3>Escritura biográfica</h3>
-            <p>Acompaño el proceso de escribir una memoria, una autobiografía o la historia de alguien querido. Entrevista, estructura, redacción y edición final.</p>
+            <h3 data-i18n="servicio1.h3">Escritura biográfica</h3>
+            <p data-i18n="servicio1.p">Acompaño el proceso de escribir una memoria, una autobiografía o la historia de alguien querido. Entrevista, estructura, redacción y edición final.</p>
           </div>
           <div class="card card--rose">
             <div class="card-icon" aria-hidden="true">✂️</div>
-            <h3>Edición y corrección</h3>
-            <p>Corrección ortotipográfica y estilística de textos en castellano, catalán y alemán. Respeto escrupuloso por la voz del autor.</p>
+            <h3 data-i18n="servicio2.h3">Edición y corrección</h3>
+            <p data-i18n="servicio2.p">Corrección ortotipográfica y estilística de textos en castellano, catalán y alemán. Respeto escrupuloso por la voz del autor.</p>
           </div>
           <div class="card card--sage">
             <div class="card-icon" aria-hidden="true">🖊️</div>
-            <h3>Prólogos literarios</h3>
-            <p>Escritura de prólogos que sitúan la obra en su contexto y dan al lector las herramientas para adentrarse en ella con más profundidad.</p>
+            <h3 data-i18n="servicio3.h3">Prólogos literarios</h3>
+            <p data-i18n="servicio3.p">Escritura de prólogos que sitúan la obra en su contexto y dan al lector las herramientas para adentrarse en ella con más profundidad.</p>
           </div>
         </div>
         <div class="text-center mt-4">
-          <a href="contacto.html" class="btn btn-primary">Hablar sobre tu proyecto →</a>
+          <a href="contacto.html" class="btn btn-primary" data-i18n="servicios.btn">Hablar sobre tu proyecto →</a>
         </div>
       </div>
     </section>
@@ -225,22 +231,23 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <h3>Anna Oromi</h3>
-        <p>Psicóloga · Escritora · Exploradora del alma<br>Palma de Mallorca</p>
+        <p data-i18n="footer.tagline">Psicóloga · Escritora · Exploradora del alma<br>Palma de Mallorca</p>
       </div>
       <nav class="footer-nav" aria-label="Navegación del pie">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="sobre-mi.html">Sobre mí</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="sobre-mi.html" data-i18n="nav.about">Sobre mí</a></li>
+          <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
         </ul>
       </nav>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Anna Oromi. Todos los derechos reservados.</p>
-      <p>Hecho con curiosidad y cuidado.</p>
+      <p data-i18n="footer.copyright">© 2025 Anna Oromi. Todos los derechos reservados.</p>
+      <p data-i18n="footer.made">Hecho con curiosidad y cuidado.</p>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

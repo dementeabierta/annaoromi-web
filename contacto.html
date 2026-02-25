@@ -10,19 +10,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
 
   <nav role="navigation" aria-label="Navegación principal">
     <a href="index.html" class="nav-logo">Anna Oromi</a>
-    <button class="nav-toggle" aria-expanded="false" aria-label="Abrir menú">
+    <button class="nav-toggle" aria-expanded="false" data-i18n-aria="nav.toggle.aria" aria-label="Abrir menú">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" role="list">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="sobre-mi.html">Sobre mí</a></li>
-      <li><a href="contacto.html" class="nav-cta">Contacto</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="sobre-mi.html" data-i18n="nav.about">Sobre mí</a></li>
+      <li><a href="contacto.html" class="nav-cta" data-i18n="nav.contact">Contacto</a></li>
+      <li class="lang-switcher" aria-label="Language / Idioma">
+        <button class="lang-btn" data-lang="es">ES</button>
+        <span class="lang-switcher-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </li>
     </ul>
   </nav>
 
@@ -31,9 +36,9 @@
     <!-- PAGE HERO -->
     <header class="page-hero page-hero--dark">
       <div class="container--narrow">
-        <span class="section-label">Contacto</span>
-        <h1><br>Todo empieza<br>con una pregunta</h1>
-        <p class="lead">
+        <span class="section-label" data-i18n="contacto.page.label">Contacto</span>
+        <h1 data-i18n="contacto.page.h1"><br>Todo empieza<br>con una pregunta</h1>
+        <p class="lead" data-i18n="contacto.page.lead">
           No importa desde qué puerta entres. Escríbeme y veremos juntas qué camino tiene más sentido para ti.
         </p>
       </div>
@@ -46,12 +51,12 @@
 
           <!-- Info de contacto -->
           <div>
-            <span class="section-label">Información</span>
-            <h2 id="contacto-heading">Estoy aquí</h2>
-            <p class="lead">
+            <span class="section-label" data-i18n="contacto.info.label">Información</span>
+            <h2 id="contacto-heading" data-i18n="contacto.info.h2">Estoy aquí</h2>
+            <p class="lead" data-i18n="contacto.info.lead">
               Puedes escribirme sobre cualquiera de mis áreas de trabajo: psicología, escritura, Almasaje, el oráculo o cualquier otro proyecto.
             </p>
-            <p>
+            <p data-i18n="contacto.info.p">
               Respondo a todos los mensajes con atención. Si tienes dudas sobre si lo que necesitas encaja con lo que ofrezco, escríbelas tal cual: la honestidad siempre es el mejor punto de partida.
             </p>
 
@@ -61,21 +66,21 @@
               <div class="contact-info-item">
                 <div class="contact-info-icon" aria-hidden="true">📍</div>
                 <div>
-                  <h4>Ubicación</h4>
-                  <p>Palma de Mallorca<br>Sesiones presenciales (Mallorca) y online</p>
+                  <h4 data-i18n="contacto.loc.h4">Ubicación</h4>
+                  <p data-i18n="contacto.loc.p">Palma de Mallorca<br>Sesiones presenciales (Mallorca) y online</p>
                 </div>
               </div>
               <div class="contact-info-item">
                 <div class="contact-info-icon" aria-hidden="true">🗣️</div>
                 <div>
-                  <h4>Idiomas</h4>
-                  <p>Español · Catalán · Inglés · Alemán</p>
+                  <h4 data-i18n="contacto.lang.h4">Idiomas</h4>
+                  <p data-i18n="contacto.lang.p">Español · Catalán · Inglés · Alemán</p>
                 </div>
               </div>
               <div class="contact-info-item">
                 <div class="contact-info-icon" aria-hidden="true">📷</div>
                 <div>
-                  <h4>Instagram</h4>
+                  <h4 data-i18n="contacto.ig.h4">Instagram</h4>
                   <p>
                     <a href="https://instagram.com/_annazona" target="_blank" rel="noopener noreferrer" style="color: var(--violet); text-decoration: underline;">@_annazona</a>
                     &nbsp;·&nbsp;
@@ -85,8 +90,8 @@
               <div class="contact-info-item">
                 <div class="contact-info-icon" aria-hidden="true">⏱️</div>
                 <div>
-                  <h4>Tiempo de respuesta</h4>
-                  <p>Habitualmente en 48 horas laborables.</p>
+                  <h4 data-i18n="contacto.tiempo.h4">Tiempo de respuesta</h4>
+                  <p data-i18n="contacto.tiempo.p">Habitualmente en 48 horas laborables.</p>
                 </div>
               </div>
             </div>
@@ -94,24 +99,24 @@
             <hr class="divider">
 
             <div>
-              <h4 style="margin-bottom: 0.5rem; color: var(--primary);">Para quienes se hacen preguntas</h4>
-              <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 1rem;">Mi trabajo puede ser útil si...</p>
+              <h4 style="margin-bottom: 0.5rem; color: var(--primary);" data-i18n="contacto.quien.h4">Para quienes se hacen preguntas</h4>
+              <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 1rem;" data-i18n="contacto.quien.desc">Mi trabajo puede ser útil si...</p>
               <ul style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
                 <li style="display: flex; gap: 0.75rem; align-items: flex-start; color: var(--text-light);">
                   <span style="color: var(--violet); flex-shrink: 0;">◇</span>
-                  Estás atravesando una transición vital importante (jubilación, pérdida, cambio de país, envejecimiento propio o de alguien cercano).
+                  <span data-i18n="contacto.li1">Estás atravesando una transición vital importante (jubilación, pérdida, cambio de país, envejecimiento propio o de alguien cercano).</span>
                 </li>
                 <li style="display: flex; gap: 0.75rem; align-items: flex-start; color: var(--text-light);">
                   <span style="color: var(--violet); flex-shrink: 0;">◇</span>
-                  Sientes que la relación con la tecnología —tuya o de alguien que quieres— está afectando al bienestar emocional.
+                  <span data-i18n="contacto.li2">Sientes que la relación con la tecnología —tuya o de alguien que quieres— está afectando al bienestar emocional.</span>
                 </li>
                 <li style="display: flex; gap: 0.75rem; align-items: flex-start; color: var(--text-light);">
                   <span style="color: var(--violet); flex-shrink: 0;">◇</span>
-                  Quieres acompañar a una persona mayor de forma más consciente y no sabes por dónde empezar.
+                  <span data-i18n="contacto.li3">Quieres acompañar a una persona mayor de forma más consciente y no sabes por dónde empezar.</span>
                 </li>
                 <li style="display: flex; gap: 0.75rem; align-items: flex-start; color: var(--text-light);">
                   <span style="color: var(--violet); flex-shrink: 0;">◇</span>
-                  Simplemente necesitas un espacio seguro donde poder pensar en voz alta, sin que nadie te juzgue ni te dé respuestas antes de haberlas encontrado tú.
+                  <span data-i18n="contacto.li4">Simplemente necesitas un espacio seguro donde poder pensar en voz alta, sin que nadie te juzgue ni te dé respuestas antes de haberlas encontrado tú.</span>
                 </li>
               </ul>
             </div>
@@ -119,12 +124,11 @@
 
           <!-- Formulario -->
           <div>
-            <!-- Mensajes de estado del formulario -->
             <div id="form-success" hidden style="background: #EBF5EC; border: 1px solid #7A9E8E; padding: 1.25rem; margin-bottom: 1.5rem; color: #2D6B40;">
-              ✓ Mensaje enviado. Te responderé en breve. Gracias por escribirme.
+              <span data-i18n="form.success">✓ Mensaje enviado. Te responderé en breve. Gracias por escribirme.</span>
             </div>
             <div id="form-error" hidden style="background: #FBF0EE; border: 1px solid #C4876E; padding: 1.25rem; margin-bottom: 1.5rem; color: #8B3A2A;">
-              Ha ocurrido un error. Por favor, inténtalo de nuevo o escríbeme directamente por Instagram.
+              <span data-i18n="form.error">Ha ocurrido un error. Por favor, inténtalo de nuevo o escríbeme directamente por Instagram.</span>
             </div>
 
             <form
@@ -134,15 +138,15 @@
               novalidate
               aria-label="Formulario de contacto"
             >
-              <!-- Campo anti-spam honeypot -->
               <input type="text" name="_gotcha" style="display: none;" tabindex="-1" autocomplete="off">
               <input type="hidden" name="_subject" value="Nuevo mensaje desde annaoromi.com">
 
               <div class="form-row">
                 <div class="form-group">
-                  <label for="nombre">Nombre <span aria-hidden="true" style="color: var(--violet);">*</span></label>
+                  <label for="nombre" data-i18n="form.nombre.label">Nombre <span aria-hidden="true" style="color: var(--violet);">*</span></label>
                   <input
                     type="text" id="nombre" name="nombre"
+                    data-i18n-placeholder="form.nombre.placeholder"
                     placeholder="Tu nombre" required
                     autocomplete="given-name"
                   >
@@ -151,6 +155,7 @@
                   <label for="email">Email <span aria-hidden="true" style="color: var(--violet);">*</span></label>
                   <input
                     type="email" id="email" name="email"
+                    data-i18n-placeholder="form.email.placeholder"
                     placeholder="tu@email.com" required
                     autocomplete="email"
                   >
@@ -158,31 +163,32 @@
               </div>
 
               <div class="form-group">
-                <label for="motivo">¿Por qué me escribes?</label>
+                <label for="motivo" data-i18n="form.motivo.label">¿Por qué me escribes?</label>
                 <select id="motivo" name="motivo">
-                  <option value="">Elige una opción (opcional)</option>
-                  <option value="psicologia">Consulta de psicología</option>
-                  <option value="almasaje">Reservar sesión Almasaje</option>
-                  <option value="escritura">Proyecto editorial</option>
-                  <option value="oraculo">Oráculo Luz o Cruz</option>
-                  <option value="otro">Otro</option>
+                  <option value="" data-i18n="form.motivo.default">Elige una opción (opcional)</option>
+                  <option value="psicologia" data-i18n="form.motivo.psi">Consulta de psicología</option>
+                  <option value="almasaje" data-i18n="form.motivo.alm">Reservar sesión Almasaje</option>
+                  <option value="escritura" data-i18n="form.motivo.esc">Proyecto editorial</option>
+                  <option value="oraculo" data-i18n="form.motivo.ora">Oráculo Luz o Cruz</option>
+                  <option value="otro" data-i18n="form.motivo.otro">Otro</option>
                 </select>
               </div>
 
               <div class="form-group">
-                <label for="mensaje">Tu mensaje <span aria-hidden="true" style="color: var(--violet);">*</span></label>
+                <label for="mensaje" data-i18n="form.mensaje.label">Tu mensaje <span aria-hidden="true" style="color: var(--violet);">*</span></label>
                 <textarea
                   id="mensaje" name="mensaje"
+                  data-i18n-placeholder="form.mensaje.placeholder"
                   placeholder="Cuéntame qué te trae por aquí. No hay manera equivocada de empezar."
                   required
                 ></textarea>
               </div>
 
-              <button type="submit" class="btn btn-filled-primary" style="width: 100%;">
+              <button type="submit" class="btn btn-filled-primary" style="width: 100%;" data-i18n="form.submit">
                 Enviar mensaje →
               </button>
 
-              <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 1rem; text-align: center;">
+              <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 1rem; text-align: center;" data-i18n="form.privacy">
                 Tus datos se usan exclusivamente para responder a tu mensaje y nunca se ceden a terceros.
               </p>
             </form>
@@ -194,10 +200,10 @@
 
     <!-- FRASE FINAL -->
     <div class="pullquote">
-      <blockquote>
+      <blockquote data-i18n="contacto.pullquote">
         «¿Quién eres tú?»<br>
       </blockquote>
-      <cite>— La oruga, a Alicia.<br>La pregunta más breve contiene el viaje más largo. Si estás lista para comenzarlo, aquí estoy.</cite>
+      <cite data-i18n="contacto.pullquote.cite">— La oruga, a Alicia.<br>La pregunta más breve contiene el viaje más largo. Si estás lista para comenzarlo, aquí estoy.</cite>
     </div>
 
   </main>
@@ -206,22 +212,23 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <h3>Anna Oromi</h3>
-        <p>Psicóloga · Escritora · Exploradora del alma<br>Palma de Mallorca</p>
+        <p data-i18n="footer.tagline">Psicóloga · Escritora · Exploradora del alma<br>Palma de Mallorca</p>
       </div>
       <nav class="footer-nav" aria-label="Navegación del pie">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="sobre-mi.html">Sobre mí</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="sobre-mi.html" data-i18n="nav.about">Sobre mí</a></li>
+          <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
         </ul>
       </nav>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Anna Oromi. Todos los derechos reservados.</p>
-      <p>Hecho con curiosidad y cuidado.</p>
+      <p data-i18n="footer.copyright">© 2025 Anna Oromi. Todos los derechos reservados.</p>
+      <p data-i18n="footer.made">Hecho con curiosidad y cuidado.</p>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

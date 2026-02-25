@@ -155,6 +155,32 @@ nav.scrolled { padding: 1rem 2rem; box-shadow: var(--shadow); }
 .nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--text); transition: var(--transition); }
 
 /* --------------------------------------------------------------------------
+   5b. Selector de idioma EN / ES
+   -------------------------------------------------------------------------- */
+.lang-switcher {
+  display: flex; align-items: center; gap: 0.15rem;
+  margin-left: 0.6rem;
+}
+.lang-switcher-sep {
+  font-size: 0.65rem; color: var(--border);
+  line-height: 1; user-select: none;
+}
+.lang-btn {
+  background: none; border: none; cursor: pointer;
+  font-family: var(--font-sans); font-size: 0.72rem;
+  font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--text-muted); padding: 0.25rem 0.3rem;
+  transition: color 0.2s ease; line-height: 1;
+}
+.lang-btn:hover         { color: var(--primary); }
+.lang-btn--active       { color: var(--violet); font-weight: 600; }
+
+@media (max-width: 768px) {
+  .lang-switcher { margin-left: 0; margin-top: 0.5rem; }
+  .lang-btn      { font-size: 0.9rem; padding: 0.3rem 0.5rem; }
+}
+
+/* --------------------------------------------------------------------------
    6. Botones
    -------------------------------------------------------------------------- */
 .btn {
