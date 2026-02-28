@@ -17,8 +17,8 @@
     'nav.toggle.aria':    { es: 'Abrir menú', en: 'Open menu' },
     'nav.logo.aria':      { es: 'Anna Oromi — Inicio', en: 'Anna Oromi — Home' },
 
-    'footer.tagline':     { es: 'Psicóloga · Escritora · Exploradora del alma<br>Palma de Mallorca',
-                            en: 'Psychologist · Writer · Soul Explorer<br>Palma de Mallorca' },
+    'footer.tagline':     { es: 'Psicóloga · Escritora<br>Palma de Mallorca',
+                            en: 'Psychologist · Writer<br>Palma de Mallorca' },
     'footer.nav.label':   { es: 'Navegación del pie', en: 'Footer navigation' },
     'footer.copyright':   { es: '© 2025 Anna Oromi. Todos los derechos reservados.',
                             en: '© 2025 Anna Oromi. All rights reserved.' },
@@ -26,8 +26,8 @@
                             en: 'Made with curiosity and care.' },
 
     // ── INDEX ────────────────────────────────────────────────────────────────
-    'index.hero.label':   { es: 'Psicóloga · Escritora · Exploradora del alma',
-                            en: 'Psychologist · Writer · Soul Explorer' },
+    'index.hero.label':   { es: 'Psicóloga · Escritora',
+                            en: 'Psychologist · Writer' },
     'index.hero.quote':   { es: '«Cada rostro es una historia en movimiento;<br>la psicoterapia ayuda a unir sus fragmentos.»',
                             en: '«Every face is a story in motion;<br>psychotherapy helps to weave its fragments together.»' },
     'index.hero.discover':{ es: 'Descúbreme',   en: 'Discover me' },
