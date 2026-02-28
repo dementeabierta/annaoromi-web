@@ -100,7 +100,7 @@ section { padding: var(--gap) 0; }
    -------------------------------------------------------------------------- */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  display: flex; justify-content: space-between; align-items: center;
+  display: flex; align-items: center; gap: 1.5rem;
   padding: 1.4rem 2rem;
   background: #ffffff;
   border-bottom: 1px solid #e0d8cc;
@@ -115,6 +115,7 @@ nav.scrolled { padding: 1rem 2rem; box-shadow: var(--shadow); }
   color: #2D4A5C !important;
   letter-spacing: 0.02em;
   flex-shrink: 0;
+  margin-right: auto;
 }
 
 .nav-links {
@@ -159,7 +160,7 @@ nav.scrolled { padding: 1rem 2rem; box-shadow: var(--shadow); }
    -------------------------------------------------------------------------- */
 .lang-switcher {
   display: flex; align-items: center; gap: 0.15rem;
-  margin-left: 0.6rem;
+  flex-shrink: 0;
 }
 .lang-switcher-sep {
   font-size: 0.65rem; color: var(--border);
@@ -167,18 +168,13 @@ nav.scrolled { padding: 1rem 2rem; box-shadow: var(--shadow); }
 }
 .lang-btn {
   background: none; border: none; cursor: pointer;
-  font-family: var(--font-sans); font-size: 0.72rem;
+  font-family: var(--font-sans); font-size: 0.78rem;
   font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--text-muted); padding: 0.25rem 0.3rem;
+  color: var(--text-light); padding: 0.25rem 0.4rem;
   transition: color 0.2s ease; line-height: 1;
 }
 .lang-btn:hover         { color: var(--primary); }
 .lang-btn--active       { color: var(--violet); font-weight: 600; }
-
-@media (max-width: 768px) {
-  .lang-switcher { margin-left: 0; margin-top: 0.5rem; }
-  .lang-btn      { font-size: 0.9rem; padding: 0.3rem 0.5rem; }
-}
 
 /* --------------------------------------------------------------------------
    6. Botones
