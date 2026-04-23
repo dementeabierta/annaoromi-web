@@ -250,6 +250,7 @@
     'libro1.tag2':  { es: 'Envejecimiento', en: 'Ageing' },
     'libro1.tag3':  { es: 'Memoria', en: 'Memory' },
     'libro1.tag4':  { es: 'Vida contemplativa', en: 'Contemplative life' },
+    'libro1.pdf':   { es: '📄 Leer muestra (PDF)', en: '📄 Read sample (PDF)' },
 
     'libro2.role':  { es: 'Prólogo y edición', en: 'Preface and editing' },
     'libro2.h3':    { es: 'Poemario de Aguedo Fernández', en: 'Poetry collection by Aguedo Fernández' },
