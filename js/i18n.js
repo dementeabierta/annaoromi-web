@@ -275,6 +275,7 @@
     'libro3.tag2':  { es: 'Salud', en: 'Health' },
     'libro3.tag3':  { es: 'Bienestar', en: 'Wellbeing' },
     'libro3.tag4':  { es: 'Traducción', en: 'Translation' },
+    'libro3.link':  { es: '🔗 Más info en la editorial →', en: '🔗 More info at the publisher →' },
 
     'libro4.role':  { es: 'Editora', en: 'Editor' },
     'libro4.h3':    { es: 'Entrevista biográfica (alemán)', en: 'Biographical interview (German)' },
