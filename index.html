@@ -41,10 +41,7 @@
   <main>
 
     <!-- HERO -->
-    <section class="hero" aria-label="Portada">
-      <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
-        <source src="img/encabezado.mp4" type="video/mp4">
-      </video>
+    <section class="hero" aria-label="Portada" style="min-height:70vh;">
       <div class="hero-content">
         <br><span class="hero-label" data-i18n="index.hero.label">Psicóloga · Escritora</span>
         <h1>Anna Oromi</h1>
@@ -52,15 +49,21 @@
           «Cada rostro es una historia en movimiento;<br>
           la psicoterapia ayuda a unir sus fragmentos.»
         </p>
-        <div class="hero-actions">
-          <a href="sobre-mi.html" class="btn btn-light" data-i18n="index.hero.discover">Descúbreme</a>
-          <a href="contacto.html" class="btn btn-light" style="border-color:var(--violet);color:var(--violet);" data-i18n="index.hero.talk">Hablemos</a>
-        </div>
+      </div>
+    </section>
+
+    <!-- VÍDEO (formato vertical, se muestra completo sin recortar) -->
+    <section class="section-dark" aria-label="Vídeo" style="padding: 0 0 var(--gap);">
+      <div class="container text-center">
+        <video autoplay muted loop playsinline aria-hidden="true"
+               style="display:block; margin:0 auto; height:min(85vh, 820px); max-width:100%; aspect-ratio:9/16; object-fit:contain; border-radius:4px; box-shadow:0 6px 40px rgba(0,0,0,0.35);">
+          <source src="img/encabezado.mp4" type="video/mp4">
+        </video>
       </div>
     </section>
 
     <!-- SOBRE MÍ (resumen) -->
-    <section aria-labelledby="about-heading">
+    <section aria-label="Sobre mí">
       <div class="container">
         <div class="grid-2">
           <div class="about-img-wrap" aria-label="Fotografía de Anna Oromi">
@@ -68,10 +71,6 @@
           </div>
           <div class="about-text">
             <span class="section-label" data-i18n="index.about.label">Sobre mí</span>
-            <h2 id="about-heading" data-i18n="index.about.h2">Ciencia con imaginación.</h2>
-            <p class="lead" data-i18n="index.about.lead">
-              Soy psicóloga con interés en el colectivo de personas mayores: envejecimiento activo, proyectos intergeneracionales y los factores que hacen posible envejecer con plenitud. Creo que el autoconocimiento es la herramienta más valiosa que tenemos, y la psicoterapia, el camino más honesto para desarrollarla.
-            </p>
             <p data-i18n="index.about.p">
               Vivo en Palma de Mallorca y me muevo entre el rigor académico y la imaginación creativa. Soy también escritora, masajista holística y creadora del oráculo <em>Luz o Cruz</em>. Todo forma parte de un mismo hilo: acompañar a las personas en el arte de reconocerse a sí mismas.
             </p>
@@ -123,37 +122,12 @@
 
           <article class="card card--sage">
             <div class="card-icon" aria-hidden="true">🎨</div>
-            <h3 data-i18n="index.card.reduccion.h3">Reducción de Riesgos</h3>
-            <p data-i18n="index.card.reduccion.p">Diseño educativo y voluntariado para colectivos de salud en espacios de ocio nocturno. Arte y comunidad al servicio de la prevención y promoción de la salud.</p>
-            <span class="card-link" style="cursor:default; opacity:0.5;" data-i18n="index.card.reduccion.link">Voluntariado activo</span>
+            <h3 data-i18n="index.card.reduccion.h3">Stand de Prevención</h3>
+            <p data-i18n="index.card.reduccion.p">Co-fundadora de la Asociación Avatars Balears, con proyectos de stand de prevención para la salud comunitaria.</p>
+            <a href="https://www.avatars-chemist.org" class="card-link" target="_blank" rel="noopener noreferrer" data-i18n="index.card.reduccion.link">avatars-chemist.org →</a>
           </article>
 
         </div>
-      </div>
-    </section>
-
-    <!-- ESPECIALIZACIÓN (bloque SEO) -->
-    <section aria-labelledby="esp-heading">
-      <div class="container--narrow">
-        <div class="section-header">
-          <span class="section-label" data-i18n="index.esp.label">Especialización</span>
-          <h2 id="esp-heading" data-i18n="index.esp.h2">Aprender a envejecer<br>es el proyecto de toda una vida.</h2>
-        </div>
-        <p class="lead" data-i18n="index.esp.lead">
-          Mi trabajo tiene un foco claro: el colectivo de personas mayores. Creo que la forma en que envejecemos depende, en gran medida, de cómo nos relacionamos con nosotros mismos, con las generaciones que nos rodean y con el tiempo que aún tenemos por delante.
-        </p>
-        <p data-i18n="index.esp.p">
-          Los <strong>proyectos intergeneracionales</strong>, los factores del <strong>envejecimiento saludable</strong> y la promoción del <strong>envejecimiento activo</strong> son la base de mi práctica. Y el <strong>autoconocimiento</strong> es el hilo que lo conecta todo: somos nosotros mismos quienes nos acompañaremos en todas las etapas de la vida.
-        </p>
-        <div class="tags mt-3" aria-label="Áreas de especialización">
-          <span class="tag" data-i18n="index.tag.mayores">Personas mayores</span>
-          <span class="tag" data-i18n="index.tag.activo">Envejecimiento activo</span>
-          <span class="tag" data-i18n="index.tag.intergeneracional">Intergeneracional</span>
-          <span class="tag" data-i18n="index.tag.autoconocimiento">Autoconocimiento</span>
-          <span class="tag" data-i18n="index.tag.psicoterapia">Psicoterapia</span>
-          <span class="tag" data-i18n="index.tag.creatividad">Creatividad</span>
-        </div>
-        <a href="contacto.html" class="btn btn-primary mt-4" data-i18n="index.esp.btn">Contactar →</a>
       </div>
     </section>
 
